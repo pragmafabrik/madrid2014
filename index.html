@@ -132,6 +132,64 @@
             <img src="images/gotlib.jpg" />
           </section>
         </section>
+        <section>
+          <section>
+            <h2>Pomm: a take on ORM limitations</h2>
+            <ul>
+              <li>&#10149; Do not enforce OO in relational</li>
+              <li>&#10149; Do not use database abstraction</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Enforcing OO in database</h2>
+            <ul>
+              <li class="fragment">&#10149; Does not define data structure where it is the more constrained.</li>
+              <li class="fragment">&#10149; Hard coupling between projection and class definition.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Structure definition by constraint</h2>
+            <ul>
+              <li>&#10149; Types are constraints</li>
+              <li>&#10149; <code>NOT NULL</code>, <code>UNIQUE</code>…</li>
+              <li>&#10149; <code>CHECK</code> makes your data consistent.</li>
+              <li>&#10149; Structuring data is business logic in the database.</li>
+            </ul>
+            <hr />
+            <h2 class="fragment">Relax !</h2>
+          </section>
+          <section>
+            <h2>Coupling projection and class</h2>
+            <ul>
+              <li>&#10149; Means <code>SELECT * FROM …</code></li>
+              <li>&#10149; No distinction between technical and business data.</li>
+              <li>&#10149; Turns the database into an entity database.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Coupling projection and class</h2>
+            <p>Defining an entity</p>
+            <img src="images/beer-icon.png" width=300" style="border: 0;" />
+          </section>
+          <section>
+            <h2>Coupling projection and class</h2>
+            <p>Turns the database into an entity store:</p>
+            <img src="images/fridge.png" width=400" style="border: 0;" />
+          </section>
+          <section>
+            <h2>Coupling projection and class</h2>
+            <p>In which the relational db has poor added value</p>
+            <img src="images/square-peg-round-hole.jpg" width=400" style="border: 0;" />
+          </section>
+          <section data-background="images/yoda.jpg" data-background-size="1000px">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>The power of the projection</h2>
+            <img src="images/map.png" />
+          </section>
+        </section>
       </div>
 
     </div>

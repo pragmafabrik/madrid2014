@@ -58,6 +58,7 @@
               <li>Grégoire HUBERT <a href="https://twitter.com/chanmix51">@chanmix51</a></li>
               <li>Author of <a href="http://www.pomm-project.org">Pomm</a></li>
               <li>Founder of <a href="http://www.pragmafabrik.com/en/">PragmaFabrik</a></li>
+              <li>joind.in  https://joind.in/12955</li>
             </ul>
           </p>
         </section>
@@ -411,7 +412,7 @@
               <h2>Geometric types</h2>
               <code><pre class="vimphp">
 <span class="Operator">$</span><span class="Identifier">stations</span> <span class="Operator">=</span> <span class="Operator">$</span><span class="Identifier">session</span>
-    <span class="Structure">-&gt;</span>getModel<span class="Special">(</span>'<span class="String">\Application\Bike\Station</span>'<span class="Special">)</span>
+    <span class="Structure">-&gt;</span>getModel<span class="Special">(</span>'<span class="String">\Application\BikeSchema\StationModel</span>'<span class="Special">)</span>
     <span class="Structure">-&gt;</span>findWhere<span class="Special">(</span>
         '<span class="String">circle(point($*, $*), $*) @&gt; position</span>',
         <span class="Special">[</span>
@@ -574,11 +575,11 @@
             <section>
               <h2>Sorry, we won't talk about…</h2>
               <ul>
-                <li class="fragment">&#10149; Savepoints in transactions</li>
-                <li class="fragment">&#10149; Deferrable constraints</li>
                 <li class="fragment">&#10149; Transactionnable DDLs</li>
                 <li class="fragment">&#10149; Materialized views</li>
                 <li class="fragment">&#10149; Full text search</li>
+                <li class="fragment">&#10149; Procedural languages</li>
+                <li class="fragment">&#10149; Indexes</li>
                 <li class="fragment">&#10149; And so much more…</li>
               </ul>
             </section>
@@ -612,14 +613,14 @@
 <span class="Special">&lt;?php</span>
 <span class="Structure">namespace</span> Model\Blog\PublicSchema;
 <span class="Comment">//…</span>
-<span class="Structure">class</span> NewsModel <span class="Structure">extends</span> Model
+<span class="Structure">class</span> ComputerModel <span class="Structure">extends</span> Model
 <span class="Special">{</span>
     <span class="Include">use</span> WriteQueries;
 
     <span class="StorageClass">public</span> <span class="Define">function</span> <span class="Operator">__construct</span><span class="Special">()</span>
     <span class="Special">{</span>
-        <span class="Operator">$</span><span class="Identifier">this</span><span class="Structure">-&gt;</span>structure <span class="Operator">=</span> <span class="Define">new</span> NewsStructure;
-        <span class="Operator">$</span><span class="Identifier">this</span><span class="Structure">-&gt;</span>flexible_entity_class <span class="Operator">=</span> &quot;<span class="String">\Model\PommProject\PommSchema\News</span>&quot;;
+        <span class="Operator">$</span><span class="Identifier">this</span><span class="Structure">-&gt;</span>structure <span class="Operator">=</span> <span class="Define">new</span> ComputerStructure;
+        <span class="Operator">$</span><span class="Identifier">this</span><span class="Structure">-&gt;</span>flexible_entity_class <span class="Operator">=</span> &quot;<span class="String">\Model\PommProject\PommSchema\Computer</span>&quot;;
     <span class="Special">}</span>
 </pre></code>
             </section>
@@ -645,6 +646,55 @@
 </pre>
               </code>
             </section>
+            <section>
+              <h2>Organize the code</h2>
+              <img src="images/mvc.png" />
+            </section>
+            <section>
+              <h2>Organize the SQL &amp; code</h2>
+              <img src="images/mv2c.png" />
+            </section>
+          </section>
+          <section>
+            <section>
+              <h2>Postgresql is the database<br />of the future</h2>
+              <ul>
+                <li class="fragment">5 years to get stable version</li>
+                <li class="fragment">5 years to comply to SQL standard</li>
+                <li class="fragment">5 years to be enterprise ready</li>
+                <li class="fragment">And innovating since then !</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Pomm: 5 years of Postgres</h2>
+              <ul>
+                <li class="fragment">sfPgLookPlugin (2010)</li>
+                <li class="fragment">Pomm (2011 - 2015)</li>
+                <li class="fragment">Pomm2 (2015 - ?)</li>
+                <li class="fragment">Pragmatic, efficient, easy</li>
+              </ul>
+            </section>
+            <section>
+              <h2>You can join us !</h2>
+              <ul>
+                <li class="fragment">Play with Postgres</li>
+                <li class="fragment">Its documentation is heaven</li>
+                <li class="fragment">Ported by a very open and talented community</li>
+                <li class="fragment">Play with Pomm2</li>
+                <li class="fragment">Your experience is <strong>very</strong> valuable</li>
+                <li class="fragment">Help us to make the best tool for database in PHP</li>
+              </ul>
+            </section>
+          </section>
+          <section data-background="images/background.jpg">
+            <h2>Thank you</h2>
+            <hr />
+            <ul>
+              <li><strong>joind.in</strong>&nbsp; https://joind.in/12955</li>
+              <li><strong>twitter</strong>&nbsp; @chanmix51, @PommProject</li>
+            </ul>
+            <hr />
+            <h3>Any questions ?</h3>
           </section>
       </div>
 
